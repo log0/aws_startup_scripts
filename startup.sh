@@ -34,12 +34,20 @@ mount /dev/xvdf1 ~/env
 # prepare keys
 cp ~/env/keys/* ~/.ssh
 
+# prepare home
+cp ~/env/home/* ~/
+
 # activate environment
 cd ~/env/source_2
 
 source bin/activate
 
 pip install numpy
-pip install scikit-learn
 pip install scipy
+pip install scikit-learn
 pip install netCDF4
+
+# MANUAL steps. update LD_LIBRARY_PATH to profile;
+# cd ~/env/source_2/source/mkl/l_mkl_11.1.0.080
+# ./install.sh
+# cat 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/intel64:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/ia32' >> ~/.bash_profile
