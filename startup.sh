@@ -5,7 +5,7 @@ sudo -s
 
 # install related packages
 apt-get update
-apt-get install -y gcc g++ python-dev git htop gfortran libopenblas-dev liblapack-dev make
+apt-get install -y gcc g++ python-dev git htop gfortran libopenblas-dev liblapack-dev make iotop python-virtualenv autoconf
 
 git clone https://www.github.com/log0/aws_startup_scripts/
 
@@ -35,7 +35,8 @@ mount /dev/xvdf1 ~/env
 cp ~/env/keys/* ~/.ssh
 
 # activate environment
-cd ~/env/source
+cd ~/env/source_2
+
 source bin/activate
 
 pip install numpy
