@@ -7,6 +7,9 @@ sudo -s
 apt-get update
 apt-get install -y gcc g++ python-dev git htop gfortran libopenblas-dev liblapack-dev make iotop python-virtualenv autoconf
 
+git config --global user.name "Eric Chio"
+git config --global user.email "im.ckieric@gmail.com"
+
 mkdir -p ~/.vim/view
 
 # mount our required disk
@@ -24,3 +27,5 @@ cp ~/env/home/.* ~/
 cd ~/env/source_2
 
 source bin/activate
+
+/sbin/swapon /home/ubuntu/env/swap/swap.1
