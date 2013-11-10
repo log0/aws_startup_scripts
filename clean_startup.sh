@@ -35,7 +35,7 @@ mount /dev/xvdf1 ~/env
 cp ~/env/keys/* ~/.ssh
 
 # prepare home
-cp ~/env/home/* ~/
+cp ~/env/home/.* ~/
 
 # activate environment
 cd ~/env/source_2
@@ -50,4 +50,5 @@ pip install netCDF4
 # MANUAL steps. update LD_LIBRARY_PATH to profile;
 # cd ~/env/source_2/source/mkl/l_mkl_11.1.0.080
 # ./install.sh
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/intel64:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/ia32
 # echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/intel64:/opt/intel/composer_xe_2013_sp1.0.080/mkl/lib/ia32' >> ~/.bash_profile

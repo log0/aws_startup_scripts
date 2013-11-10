@@ -16,7 +16,7 @@ mount /dev/xvdf1 ~/env
 cp ~/env/keys/* ~/.ssh
 
 # prepare home
-cp ~/env/home/* ~/
+cp ~/env/home/.* ~/
 
 # activate environment
 cd ~/env/source_2
