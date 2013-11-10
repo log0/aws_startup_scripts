@@ -7,6 +7,8 @@ sudo -s
 apt-get update
 apt-get install -y gcc g++ python-dev git htop gfortran libopenblas-dev liblapack-dev make iotop python-virtualenv autoconf
 
+mkdir -p ~/.vim/view
+
 git clone https://www.github.com/log0/aws_startup_scripts/
 
 # install custom-compiled libraries
